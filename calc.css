@@ -1,0 +1,312 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: auto;
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.odiv{
+  margin-top: 90px;
+  display: flex;
+  justify-self: center;
+  border-radius: 30px;
+  border: 2px solid black;
+}
+.bigdiv{
+  justify-self: center;
+  padding: 30px;
+  width: 510px;
+}
+.calc{
+  margin-bottom: 18px;
+  align-items: center;
+}
+.calc div{
+  font-size: 23px;
+  display: inline;
+  margin-right: 90px;
+  font-weight: 600;
+}
+.calc a{
+  text-decoration: none;
+  border-bottom: 2px dotted;
+  color: black;
+}
+.amount div{
+  margin-bottom: 10px;
+}
+.pam1{
+  display: none;
+}
+.pam, .pam1{
+  background-color: rgb(137, 215, 241);
+  width: 100%;
+  border: 1px black solid;
+  border-radius: 7px;
+}
+.pam label, .pam1 label{
+  font-size: 25px;
+  margin: 5px;
+}
+.pam input, .pam1 input{
+  width: 93.7%;
+  height:7vh;
+  font-size: 23px;
+  border: none;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.oyears{
+  display: flex;
+  gap: 40px;
+}
+/*years*/
+.years div{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.pyears, .pyears1, .pyears2{
+  background-color: rgb(137, 215, 241);
+  width: 108%;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.pyears input, .pyears1 input, .pyears2 input{
+  width: 11vw;
+  height: 6vh;
+  border: none;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  display: inline;
+  overflow: hidden;
+}
+.pyears1, .pyears2{
+  display: none;
+}
+form{
+  margin-top: 20px;
+}
+.type{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.box11, .box12{
+  padding: 10px;
+  border: 1.4px solid black;
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
+.btn{
+  text-decoration: none;
+}
+.btn button{
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 17vw;
+  height: 7vh;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color:hsl(61, 70%, 52%) ;
+  margin-top: 20px;
+}
+
+.bigdiv2{
+  border: none;
+  background-color:hsl(202, 55%, 16%);
+  padding: 30px;
+  width: 510px;
+  border-bottom-left-radius: 80px ;
+  justify-items: center;
+  border-bottom-right-radius: 29px;
+  border-top-right-radius: 29px ;
+  justify-content: center;
+  justify-self: center;
+  overflow: hidden;
+}
+.bigdiv2 .divv{
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+.bigdiv2 .pp{
+  text-align: center;
+  font-size: 18px;
+  color: hsl(200, 26%, 54%) ;
+}
+.media{
+  border: none;
+  padding: 30px;
+  width: 510px;
+  justify-items: center;
+  display: none;
+}
+.media div{
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+.repaydiv{
+  background-color:hsl(200, 88%, 7%);
+  width: 23vw;
+  padding: 20px;
+  border-radius: 12px;
+  border-top: 3px solid yellow;
+}
+.repay{
+  text-align: center;
+  line-height: 0.7;
+}
+.repay p{
+  font-size: 17px;
+}
+.repay div{
+  color: hsl(61, 70%, 52%) ;
+  font-size: 30px;
+}
+
+@media (max-width:480px){
+  .odiv{
+    display: inline;
+    border: none;
+  }
+  .bigdiv{
+    justify-self: center;
+    padding: 30px;
+    width: 310px;
+  }
+  .calc{
+    margin-bottom: 18px;
+    align-items: normal;
+  }
+  .calc div{
+    font-size: 22px;
+    width: 70vw;
+    display: block;
+    margin-right: 90px;
+    font-weight: 600;
+  }
+  .calc a{
+    text-decoration: none;
+    border-bottom: 2px dotted;
+    color: black;
+    font-size: 15px;
+  }
+  .amount div{
+    margin-bottom: 10px;
+  }
+  .pam{
+    display: none;
+  }
+  .pam1{
+    display: block;
+  }
+  .pam1 input{
+    width: 88.7%;
+  }
+  .oyears{
+    display: block;
+  }
+  /*years*/
+.years div{
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.pyears1, .pyears2{
+  display: block;
+}
+.pyears{
+  display: none;
+}
+.pyears1, .pyears2{
+  background-color: rgb(137, 215, 241);
+  width: 108%;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.pyears1 input, .pyears2 input{
+  width: 59vw;
+  height: 7vh;
+  padding-left: 10px;
+}
+.box11{
+  background-color: hsla(61, 70%, 52%, 0.333);
+  border: 2px hsl(61, 100%, 50%) solid;
+}
+.btn button{
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  justify-self: center;
+  width: 60vw;
+  height: 8vh;
+}
+.bigdiv2{
+  border: none;
+  justify-self: center;
+  padding: 10px;
+  width: 340px;
+  border-bottom-left-radius: 00px ;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px ;
+}
+.bigdiv2 img{
+  display: none;
+}
+.bigdiv2 .divv{
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  display: none;
+}
+.bigdiv2 .pp{
+  text-align: center;
+  font-size: 18px;
+  color: hsl(200, 26%, 54%) ;
+  display: none;
+}
+.media{
+  border: none;
+  padding: 30px;
+  width: 510px;
+  display: none;
+}
+.media div{
+  text-align: start;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  justify-self: start;
+  margin-left: 75px;
+}
+.media p{
+  text-align: left;
+  font-size: 18px;
+  color: hsl(200, 26%, 54%);
+  width: 75vw;
+}
+.repaydiv{
+  background-color:hsl(200, 88%, 7%);
+  width: 80vw;
+}
+.repay{
+  line-height: 0.7;
+  display: inline;
+}
+.repay p{
+  font-size: 17px;
+}
+.repay div{
+  color: hsl(61, 70%, 52%) ;
+  font-size: 27px;
+}
+.media{
+  display: block;
+}
+}
